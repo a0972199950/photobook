@@ -19,7 +19,8 @@ const Title: React.FC<Props> = (props) => {
         classes.title,
         classes[`grade-${grade}`],
         className
-      ])}>
+      ])}
+      >
         {children}
       </Tag>
     </>
