@@ -1,0 +1,31 @@
+@import '@/styles/mixins';
+
+.title {
+  font-weight: 600;
+  font-family: Noto Sans TC;
+  @apply text-gray;
+}
+
+.grade-1 {
+  @include grade-1;
+}
+
+.grade-2 {
+  @include grade-2;
+}
+
+.grade-3 {
+  @include grade-3;
+}
+
+.grade-4 {
+  @include grade-4;
+}
+
+.grade-5 {
+  @include grade-5;
+}
+
+.grade-6 {
+  @include grade-6;
+}
