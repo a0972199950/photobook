@@ -20,6 +20,6 @@ export interface MutationOptions<Data = any> {
   swrConfig?: SWRMutationConfiguration<any, any>
 }
 
-export type UseQueryAPI<Args = any, Res = any> = (args: Args, options?: QueryOptions) => SWRResponse<Res>
+export type UseQueryAPI<Args = null, Res = any> = (args?: Args, options?: QueryOptions) => SWRResponse<Res>
 
-export type UseMutationAPI<Args = any, Res = any> = (args: Args, options?: MutationOptions) => SWRResponse<Res>
+export type UseMutationAPI<Args = null, Res = any> = (args?: Args, options?: MutationOptions) => SWRResponse<Res>
