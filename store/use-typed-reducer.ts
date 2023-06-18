@@ -1,19 +1,15 @@
 // [Credit]: https://stackoverflow.com/questions/53146795/react-usereducer-async-data-fetch
 
 import * as React from 'react'
-import { userReducer, SetUserArgs } from './user.store'
-import type { ActionType, State } from './index'
+import { userReducer } from './user.store'
+import type { ActionType, State, Dispatch } from './types'
 
 const reducerHandlers = {
   ...userReducer
 }
 
 const dispatchFactory = (coreDispatch: React.Dispatch<State>, getState: () => State, stateRef: React.MutableRefObject<State>) => {
-  /** [Dispatch overloads]: User store  */
-  function dispatch (actionType: 'user/SET_USER', payload: SetUserArgs): Promise<void>
-  function dispatch (actionType: 'user/CLEAR_USER'): Promise<void>
-
-  async function dispatch (actionType: ActionType, payload?: any) {
+  const dispatch: Dispatch = async (actionType: ActionType, payload?: any) => {
     const handler = reducerHandlers[actionType]
     let newState: State
 
@@ -33,8 +29,6 @@ const dispatchFactory = (coreDispatch: React.Dispatch<State>, getState: () => St
 
   return dispatch
 }
-
-export type Dispatch = ReturnType<typeof dispatchFactory>
 
 const reducer: React.Reducer<State, State> = (_state: State, newState: State): State => newState
 
