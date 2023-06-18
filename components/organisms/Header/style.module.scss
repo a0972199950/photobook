@@ -1,0 +1,23 @@
+.header {
+  @apply bg-primary;
+
+  width: 100vw;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.right {
+  float: right;
+}

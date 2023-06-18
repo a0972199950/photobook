@@ -6,9 +6,10 @@ interface Props {
   children?: React.ReactNode
 }
 
-const Paragraph: React.FC<Props> = (props) => {
-  const { grade, children } = props
-
+const Paragraph: React.FC<Props> = ({
+  grade = 4,
+  children
+}) => {
   return (
     <>
       <p className={classes[`grade-${grade}`]}>
@@ -16,10 +17,6 @@ const Paragraph: React.FC<Props> = (props) => {
       </p>
     </>
   )
-}
-
-Paragraph.defaultProps = {
-  grade: 4
 }
 
 export default Paragraph
