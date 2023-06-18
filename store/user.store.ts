@@ -1,4 +1,4 @@
-import { StateInitializerArg, Reducer } from './index'
+import type { StateInitializerArg, Reducer } from './types'
 
 export class UserState {
   name: string = ''
