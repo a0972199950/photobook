@@ -1,10 +1,17 @@
+import * as React from 'react'
 import '@/styles/globals.scss'
+import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import { StoreProvider } from '@/store'
 
-export default function App({ Component, pageProps }: AppProps) {
+const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+  const MemoPageComponent = React.useMemo(() => React.memo(Component), [Component])
+
   return (
-    <>
-      <Component {...pageProps} />
-    </>
+    <StoreProvider>
+      <MemoPageComponent {...pageProps} />
+    </StoreProvider>
   )
 }
+
+export default App
