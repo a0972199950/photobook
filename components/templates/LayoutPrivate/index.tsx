@@ -9,9 +9,9 @@ interface Props {
 const LayoutPrivate: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

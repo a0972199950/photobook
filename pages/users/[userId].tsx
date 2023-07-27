@@ -5,10 +5,12 @@ import { useRouter } from 'next/router'
 const PageUserId: Next.NextPage = () => {
   const router = useRouter()
 
-  console.log(router.query) // { userId: '1' }
+  console.log(router) // { userId: '1' }
 
   return (
-    <></>
+    <>
+      <h1>query: {JSON.stringify(router.query)}</h1>
+    </>
   )
 }
 
