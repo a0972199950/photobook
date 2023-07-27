@@ -2,14 +2,14 @@ import * as React from 'react'
 import * as Next from 'next'
 import { useRouter } from 'next/router'
 
-const PageUserId: Next.NextPage = () => {
+const PageArticleTitle: Next.NextPage = () => {
   const router = useRouter()
 
-  console.log(router.query) // { userId: '1' }
+  console.log(router.query) // { titles: ['foo', 'bar'] }
 
   return (
     <></>
   )
 }
 
-export default PageUserId
+export default PageArticleTitle
