@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-const ShopError: React.FC = () => {
+const CreateError: React.FC = () => {
   return (
     <>
       <div
@@ -11,10 +11,10 @@ const ShopError: React.FC = () => {
           backgroundColor: 'red'
         }}
       >
-        <h1>Shop error</h1>
+        <h1>Create error</h1>
       </div>
     </>
   )
 }
 
-export default ShopError
+export default CreateError

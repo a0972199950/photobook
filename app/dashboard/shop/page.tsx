@@ -1,17 +1,17 @@
 import * as Next from 'next'
 
 const ShopPage: Next.NextPage = async () => {
-  await new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (Math.random() > 0.5) {
-        resolve(null)
-      } else {
-        reject()
-      }
-    }, 5000)
-  })
+  // await new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     if (Math.random() > 0.5) {
+  //       resolve(null)
+  //     } else {
+  //       reject()
+  //     }
+  //   }, 5000)
+  // })
 
-  console.log('ShopPage')
+  // console.log('ShopPage')
 
   return (
     <>

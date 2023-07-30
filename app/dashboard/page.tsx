@@ -1,17 +1,6 @@
 import * as Next from 'next'
 
-const ShopPage: Next.NextPage = async () => {
-  await new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (Math.random() > 0.5) {
-        resolve(null)
-      } else {
-        reject()
-      }
-    }, 5000)
-  })
-
-  console.log('ShopPage')
+const DashboardPage: Next.NextPage = async () => {
 
   return (
     <>
@@ -21,10 +10,10 @@ const ShopPage: Next.NextPage = async () => {
           backgroundColor: 'white'
         }}
       >
-        <h1>Shop page</h1>
+        <h1>Dashboard page</h1>
       </div>
     </>
   )
 }
 
-export default ShopPage
+export default DashboardPage

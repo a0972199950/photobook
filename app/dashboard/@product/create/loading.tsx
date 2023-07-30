@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const ShopLoading: React.FC = () => {
+const CreateLoading: React.FC = () => {
   return (
     <>
       <div
@@ -9,10 +9,10 @@ const ShopLoading: React.FC = () => {
           backgroundColor: 'aqua'
         }}
       >
-        <h1>Shop loading</h1>
+        <h1>Create loading</h1>
       </div>
     </>
   )
 }
 
-export default ShopLoading
+export default CreateLoading

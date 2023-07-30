@@ -2,9 +2,10 @@ import * as React from 'react'
 
 interface Props {
   children: React.ReactNode
+  product: React.ReactNode
 }
 
-const ShopLayout: React.FC<Props> = ({ children }) => {
+const DashboardLayout: React.FC<Props> = ({ children, product }) => {
   return (
     <>
       <div
@@ -22,11 +23,13 @@ const ShopLayout: React.FC<Props> = ({ children }) => {
           top: 0,
           left: 0
         }}
-        >Shop layout</h1>
+        >Dashboard layout</h1>
+        
         {children}
+        {product}
       </div>
     </>
   )
 }
 
-export default ShopLayout
+export default DashboardLayout

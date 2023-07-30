@@ -4,7 +4,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const ShopLayout: React.FC<Props> = ({ children }) => {
+const CreateLayout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <div
@@ -22,11 +22,11 @@ const ShopLayout: React.FC<Props> = ({ children }) => {
           top: 0,
           left: 0
         }}
-        >Shop layout</h1>
+        >Create layout</h1>
         {children}
       </div>
     </>
   )
 }
 
-export default ShopLayout
+export default CreateLayout

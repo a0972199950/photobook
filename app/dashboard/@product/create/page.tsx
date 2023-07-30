@@ -1,18 +1,21 @@
 import * as React from 'react'
 
-const DashboardLoading: React.FC = () => {
+interface Props {
+}
+
+const CreatePage: React.FC<Props> = () => {
   return (
     <>
       <div
         style={{
           border: '1px black solid',
-          backgroundColor: 'aqua'
+          backgroundColor: 'white'
         }}
       >
-        <h1>Dashboard loading</h1>
+        <h1>Create page</h1>
       </div>
     </>
   )
 }
 
-export default DashboardLoading
+export default CreatePage
