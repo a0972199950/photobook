@@ -12,12 +12,12 @@ const HoverableIcon: React.FC<Props> = ({
   return (
     <>
       {icon}
-      {/* <Image
+      <Image
         src={icon}
         alt="icon"
         width={20}
         height={20}
-      /> */}
+      />
     </>
   )
 }

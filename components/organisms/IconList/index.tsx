@@ -2,7 +2,7 @@ import * as React from 'react'
 import IconListItem from '@/components/molecules/IconListItem'
 
 interface Props {
-  listItems: {
+  listItems?: {
     icon?: string
     text: string
     hoverColor?: string
